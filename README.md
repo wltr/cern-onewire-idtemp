@@ -1,0 +1,1 @@
+# cern-onewire-idtemp
