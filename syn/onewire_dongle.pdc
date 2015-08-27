@@ -1,0 +1,33 @@
+#
+# I/O Banks
+#
+
+set_iobank bank0 -vcci 3.3V
+set_iobank bank1 -vcci 3.3V
+set_iobank bank2 -vcci 3.3V
+set_iobank bank3 -vcci 3.3V
+
+#
+# I/O Constraints
+#
+
+# Clock and Resets
+set_io {clk_pad_i}      -fixed yes -pinname 10
+set_io {rst_asy_n_i}    -fixed yes -pinname 47
+
+# Push-Button
+set_io {pb_n_i}         -fixed yes -pinname 148
+
+# LEDs
+set_io {leds_o[0]}      -fixed yes -pinname 191
+set_io {leds_o[1]}      -fixed yes -pinname 175
+set_io {leds_o[2]}      -fixed yes -pinname 165
+
+# UART
+set_io {uart_rx_i}      -fixed yes -pinname 19
+set_io {uart_tx_o}      -fixed yes -pinname 20
+
+# 1-Wire
+set_io {ow_rx_i}        -fixed yes -pinname 147
+set_io {ow_tx_o}        -fixed yes -pinname 129
+set_io {ow_spup_o}      -fixed yes -pinname 152
